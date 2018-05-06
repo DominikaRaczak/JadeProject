@@ -14,6 +14,8 @@
 //
 //*****************************************************************************
 
+// Main Class for database project
+
 namespace JadeProject
 {
 	using System;
@@ -33,6 +35,7 @@ namespace JadeProject
 	[JadeSoftware.Joob.Metadata.JomlTypeAttribute(JadeSoftware.Joob.Metadata.JomlTypeKind.Class, "JadeProject", typeof(JoobObject))]
 	public partial class JadeProject : JoobObject
 	{
+		//JADE stuff
 		private static JadeProjectMetadata _metaModel;
 		partial void _initialize();
 		static JadeProject()
