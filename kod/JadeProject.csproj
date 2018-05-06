@@ -1,0 +1,71 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<PropertyGroup>
+<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<OutputType>Library</OutputType>
+<AppDesignerFolder>Properties</AppDesignerFolder>
+<RootNamespace>JadeProject</RootNamespace>
+<AssemblyName>JadeProject</AssemblyName>
+</PropertyGroup>
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+<DebugSymbols>true</DebugSymbols>
+<DebugType>full</DebugType>
+<Optimize>false</Optimize>
+<OutputPath>bin\Debug\</OutputPath>
+<DefineConstants>DEBUG;TRACE</DefineConstants>
+<ErrorReport>prompt</ErrorReport>
+<WarningLevel>4</WarningLevel>
+</PropertyGroup>
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+<DebugType>pdbonly</DebugType>
+<Optimize>true</Optimize>
+<OutputPath>bin\Release\</OutputPath>
+<DefineConstants>TRACE</DefineConstants>
+<ErrorReport>prompt</ErrorReport>
+<WarningLevel>4</WarningLevel>
+</PropertyGroup>
+<ItemGroup>
+<Reference Include="System" />
+<Reference Include="System.ComponentModel.DataAnnotations" />
+<Reference Include="System.Runtime.Serialization" />
+<Reference Include="System.Core" />
+<Reference Include="System.Xml.Linq" />
+<Reference Include="System.Data.DataSetExtensions" />
+<Reference Include="Microsoft.CSharp" />
+<Reference Include="System.Data" />
+<Reference Include="System.Xml" />
+<Reference Include="JadeSoftware.Joob">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>C:\Jade2016\bin\JadeSoftware.Joob.dll</HintPath>
+</Reference>
+<Reference Include="JadeSoftware.Joob.Common">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>C:\Jade2016\bin\JadeSoftware.Joob.Common.dll</HintPath>
+</Reference>
+<Reference Include="JadeSoftware.Joob.Management">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>C:\Jade2016\bin\JadeSoftware.Joob.Management.dll</HintPath>
+</Reference>
+<Reference Include="JadeSoftware.Jade.DotNetInterop">
+  <SpecificVersion>False</SpecificVersion>
+  <HintPath>C:\Jade2016\bin\JadeSoftware.Jade.DotNetInterop.dll</HintPath>
+</Reference>
+</ItemGroup>
+<ItemGroup>
+<Compile Include="Cart.cs" />
+<Compile Include="Customer.cs" />
+<Compile Include="CustomersById.cs" />
+<Compile Include="Employee.cs" />
+<Compile Include="EmployeesById.cs" />
+<Compile Include="Item.cs" />
+<Compile Include="Items.cs" />
+<Compile Include="ItemsByName.cs" />
+<Compile Include="JadeProject.cs" />
+<Compile Include="Person.cs" />
+<Compile Include="Position.cs" />
+<Compile Include="Positions.cs" />
+<Compile Include="Shop.cs" />
+<Compile Include="Properties\AssemblyInfo.cs" />
+</ItemGroup>
+<Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
